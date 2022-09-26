@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./img/logo.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <title>Smsmware</title>
+</head>
+
+<body>
+  <!-- start header  ---------------->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="./img/logo.png" alt="Smsmware">
+        <span>Smsmware</span>
+      </div>
+    </div>
+  </header>
+  <!-- end header  ---------------->
+
+  <div class="swiper mySwiper all">
+    <div class="swiper-wrapper">
+      <!-- start home  ---------------->
+      <section class="swiper-slide home">
+        <div class="container">
+          <h1><span>do</span> you have a <br> cool challenge <br> for me ?...</h1>
+          <div class="shadow">
+            <img src="./img/logo.png" alt="Smsmware">
+          </div>
+        </div>
+      </section>
+      <!-- end home  ---------------->
+
+      <!-- start about  ---------------->
+      <section class="swiper-slide about">
+        <div class="container">
+          <div class="info">
+            <h1>Osama Soliman</h1>
+            <h3>JavaScript Ninja - Mobile Software Developer</h3>
+            <p>
+              Over seven years of experience in Software Development, I am a hard worker, a fast learner,
+              and self-motivated developer, I work well with teammates and enjoy getting the work
+              completed in time and love handling new challenges.
+            </p>
+          </div>
+          <img src="./img/Osama-Soliman.png" alt="Osama Soliman">
+        </div>
+      </section>
+      <!-- end about  ---------------->
+
+      <!-- start projects  ---------------->
+      <section class="swiper-slide projects" id="projects">
+        <div class="container">
+          <h1>Projects</h1>
+          <div class="swiper mySwiper apps">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <!-- end projects  ---------------->
+
+      <!-- start skills  ---------------->
+      <section class="swiper-slide skills">
+        <div class="container">
+          <div class="front" style="--background: #0a66c2;">
+            <h3>Frontend/UI Skills :</h3>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>SASS</span>
+            <span>JavaScript</span>
+            <span>JQuery</span>
+            <span>Angular</span>
+            <span>Ionic</span>
+            <span>AngularJS</span>
+            <span>Angular</span>
+            <span>Cordova</span>
+            <span>Typescript</span>
+            <span>Bootstrap</span>
+            <span>Angular Material</span>
+            <span>Adobe Photoshop CC</span>
+            <span>React</span>
+            <span>React Native</span>
+            <span>NativeScript</span>
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>Swift</span>
+            <span>SwiftUI</span>
+          </div>
+          <div class="back" style="--background: #161b22;">
+            <h3>Backend Skills:</h3>
+            <span>MEAN STACK- Express</span>
+            <span>MongoDB</span>
+            <span>NodeJS</span>
+            <span>Gulp</span>
+            <span>XML</span>
+            <span>JSON</span>
+            <span>Socket.io</span>
+            <span>PostMan</span>
+          </div>
+          <div class="other" style="--background: #f48225;">
+            <h3>Other Skills :</h3>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>BitBucket</span>
+            <span>Jira</span>
+            <span>Slack</span>
+            <span>Trello</span>
+            <span>Zoom</span>
+          </div>
+        </div>
+      </section>
+      <!-- end skills  ---------------->
+
+      <!-- start contact  ---------------->
+      <section class="swiper-slide contact">
+        <h1>Contact</h1>
+        <div class="container">
+          <div class="info" style="--background: #0c0c0c;">
+            <p>Cairo, Egypt</p>
+            <a href="mailto:smsmware@gmail.com">smsmware@gmail.com</a>
+            <a href="tel:+148126287560">+201063116380</a>
+          </div>
+          <ul>
+            <li><a style="--background: #0a66c2;" href="https://www.linkedin.com/in/smsmware/">Linkedin</a></li>
+            <li><a style="--background: #161b22;" href="https://github.com/smsmware">Github</a></li>
+            <li><a style="--background: #f48225;"
+                href="https://stackoverflow.com/users/4591364/smsmware">stackoverflow</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- end contact  ---------------->
+    </div>
+
+    <!-- nav  ---------------->
+    <nav class="swiper-pagination"></nav>
+  </div>
+
+  <!-- app  ---------------->
+  <div class="app" id="app"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper.all", {
+      direction: "vertical",
+      slidesPerView: 1,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+    });
+
+    var swiperApp = new Swiper(".mySwiper.apps", {
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+      },
+    });
+  </script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
