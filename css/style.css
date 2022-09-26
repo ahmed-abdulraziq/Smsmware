@@ -14,7 +14,7 @@
 }
 body {
     background-color: var(--dark);
-    background-image: url("/img/red-background.jpg");
+    background-image: url("./img/red-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
