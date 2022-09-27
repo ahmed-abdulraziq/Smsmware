@@ -468,6 +468,9 @@ header .logo span {
     .contact ul {
         flex-direction: column;
     }
+    .contact li {
+        min-height: fit-content;
+    }
     .contact .info,
     .contact li a {
         height: fit-content;
