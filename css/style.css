@@ -459,7 +459,7 @@ header .logo span {
 @media (max-width: 767px) {
     .contact h1 {
         font-size: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .contact .container {
         text-align: center;
